@@ -37,7 +37,7 @@
 			light.position.set(0, 0, -10);
 			//scene.add(light);
 
-			JSBLEND('./example/test.blend').then((blend) => {
+			JSBLEND(TARGET_FILE).then((blend) => {
 	        	blend.three.loadScene(scene);
 	       		render();
 	    	}).catch((error)=>{
